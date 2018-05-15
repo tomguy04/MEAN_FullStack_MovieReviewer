@@ -28,8 +28,8 @@
       </thead>
         <tr *ngFor='let movie of movies'>
           <td>{{movie.title}}</td>
-          <td><button [routerLink]="['/movies',movie._id]">Read Reviews</button>
-          <button [routerLink]="['/movies/review',movie._id]">Write review</button></td>
+          <td><button type="button" class="btn btn-info" [routerLink]="['/movies',movie._id]">Read Reviews</button>
+          <button type="button" class="btn btn-primary"[routerLink]="['/movies/review',movie._id]">Write review</button></td>
           
         </tr>
       
