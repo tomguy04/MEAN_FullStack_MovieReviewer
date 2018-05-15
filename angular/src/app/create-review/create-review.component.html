@@ -67,8 +67,11 @@
                 <div class = 'side'*ngIf='review.touched && review.invalid'>Review is required, at least 3 characters</div><br>
             
                 <!-- <button type="submit" (click)='triggerEvent($event)' [disabled]="form.invalid">Submit</button>-->
-                <button class = 'cancel' type="submit"  [disabled]="form.invalid">Submit</button>
-                <button class = 'submit'(click)='onCancel()'>Cancel</button>
+                <!-- <button class = 'cancel' type="submit"  [disabled]="form.invalid">Submit</button>
+                <button class = 'submit'(click)='onCancel()'>Cancel</button> -->
+
+                <button type="button" class="btn btn-primary" type ='submit' disabled  [disabled]="form.invalid" >Submit</button>
+                <button type="button" class="btn btn-secondary" (click)='onCancel()'>Cancel</button>
                 
             </form> 
     

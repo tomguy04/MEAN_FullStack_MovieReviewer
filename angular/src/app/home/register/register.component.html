@@ -21,7 +21,7 @@
 
 <div class="container">
     <div class="jumbotron">
-      <h3>Submit Your Movie and Your Review</h3>
+        <h3>Submit Your Movie and Your Review</h3>
       <form name = 'user' (submit)="onSubmit(form)" #form='ngForm'>
         
           <div class="form-group row">
@@ -86,8 +86,10 @@
           <div class = 'side'*ngIf='review.touched && review.invalid'>Review is Required, at least 3 characters</div><br>
     
          
-        <button class="submit" type="submit"  [disabled]="form.invalid">Submit</button>
-        <button class="cancel" (click)='onCancel()'>Cancel</button>
+        <!-- <button class="submit" type="submit"  [disabled]="form.invalid">Submit</button> -->
+        <button type="button" class="btn btn-primary" type ='submit' disabled  [disabled]="form.invalid" >Submit</button>
+        <button type="button" class="btn btn-secondary" (click)='onCancel()'>Cancel</button>
+        
       </form> 
     
       </div>

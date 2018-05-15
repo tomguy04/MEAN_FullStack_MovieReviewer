@@ -12,13 +12,17 @@
     padding: 0px;
 }
 
-.jumbotron {
-    border: 5px solid;
-    }
+.jumbotron{
+    
+    border: 5px solid black;
+    color: white;
+    background-color: orange;
+}
 
 .form-group row{
     padding: 0px;
     margin :0px;
+   
 }
 
 .col-sm-2 col-form-label{
@@ -33,5 +37,11 @@
 .form-control{
     padding: 0px;
     margin :0px;
+    
 }  
+
+.page-header{
+    background-color: blue;
+    color: black;
+}
 
